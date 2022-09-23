@@ -36,3 +36,10 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
   
+
+  deployment:
+    runs-on: ubuntu-latest
+    environment: QA
+    steps:
+      - name: deploy
+        # ...deployment-specific steps
